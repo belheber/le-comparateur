@@ -36,6 +36,3 @@ class TaleoJobScraper(object):
 
         self.driver.quit()
 
-if __name__ == '__main__':
-    scraper = TaleoJobScraper()
-    scraper.scrape()
