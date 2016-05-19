@@ -32,7 +32,7 @@ class TaleoJobScraper(object):
 
 
     def scrape(self):
-        print self.scrape_job_links()
+        return self.scrape_job_links()
 
         self.driver.quit()
 
