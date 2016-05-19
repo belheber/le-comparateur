@@ -5,13 +5,14 @@ from .forms import SerachForm
 # Create your views here.
 
 from pkgs.webscrap import scrap as sc
-from from pkgs.webscrap import scraper as scr
+from pkgs.webscrap import scraper as scr
 
-scraper = scr.TaleoJobScraper()
-title = scraper.scrape()
+
 
 def get_name(request):
     product = ''
+    scraper = scr.TaleoJobScraper()
+    title = scraper.scrape()
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:
