@@ -38,11 +38,9 @@ def scrape(link, attribute):
   return formt_data
 
 
-
-
-for url in url_p:
-  title = scrape(url, "title")
-  print '.'
-driver.quit()
-f.write("\n"+""" {% endblock content %} """)
-f.close()
+def link_scrap():
+  for url in url_p:
+    scrape(url, "title")
+  driver.quit()
+  f.write("\n"+""" {% endblock content %} """)
+  f.close()
