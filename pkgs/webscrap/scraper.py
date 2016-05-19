@@ -21,7 +21,7 @@ url_p = ['http://medicalxpress.com/news/2016-05-pfizer-blocking-drugs-lethal.htm
 
 driver = webdriver.PhantomJS()
 driver.set_window_size(1120, 550)
-f = open('../../templates/compareprice/page.html','w')
+f = open('../templates/compareprice/page.html','w')
 f.write(""" {% extends 'compareprice/index.html' %} """)
 f.write("\n"+""" {% block content %} """)
 
