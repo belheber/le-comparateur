@@ -11,8 +11,7 @@ from pkgs.webscrap import scraper as scr
 
 def get_name(request):
     product = ''
-    scraper = scr.TaleoJobScraper()
-    title = scraper.scrape()
+    scr.link_scrap()
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:
@@ -26,7 +25,7 @@ def get_name(request):
             price = sc.get_urls(product)
             price_avi = price[:5]
 
-            return render(request, 'compareprice/name.html', {'form': form, 'data': price_avi, 'scr_title':title})
+            return render(request, 'compareprice/page.html', {'data': price_avi, 'scr_title':title})
 
             # if a GET (or any other method) we'll create a blank form
     else:
@@ -34,4 +33,4 @@ def get_name(request):
     price = sc.get_urls(product)
     price_avi = price[:5]
     
-    return render(request, 'compareprice/name.html', {'form': form, 'data': price_avi, 'scr_title':title})
+    return render(request, 'compareprice/page.html', {'data': price_avi, 'scr_title':title})
