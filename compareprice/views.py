@@ -25,7 +25,7 @@ def get_name(request):
             price = sc.get_urls(product)
             price_avi = price[:5]
 
-            return render(request, 'compareprice/page.html', {'data': price_avi, 'scr_title':title})
+            return render(request, 'compareprice/page.html', {'data': price_avi, 'scr_title':"anything"})
 
             # if a GET (or any other method) we'll create a blank form
     else:
@@ -33,4 +33,4 @@ def get_name(request):
     price = sc.get_urls(product)
     price_avi = price[:5]
     
-    return render(request, 'compareprice/page.html', {'data': price_avi, 'scr_title':title})
+    return render(request, 'compareprice/page.html', {'data': price_avi, 'scr_title':"anything"})
