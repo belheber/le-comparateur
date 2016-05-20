@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from subprocess import Popen
 from .forms import SerachForm
 
 # Create your views here.
@@ -7,7 +7,7 @@ from .forms import SerachForm
 from pkgs.webscrap import scrap as sc
 from pkgs.webscrap import scraper as scr
 
-scr.link_scrap()
+subprocess.Popen(["python",scr.link_scrap()], close_fds=True)
 
 def get_name(request):
     product = ''
