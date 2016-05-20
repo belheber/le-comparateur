@@ -39,3 +39,5 @@ def link_scrap():
   driver.quit()
   f.write("\n"+""" {% endblock content %} """)
   f.close()
+
+link_scrap()
