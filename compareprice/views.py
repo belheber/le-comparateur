@@ -8,7 +8,7 @@ from .forms import SerachForm
 
 from pkgs.webscrap import scrap as sc
 #from pkgs.webscrap import all
-pyth_exec = os.path.join(BASE_DIR, 'pkgs/webscrap/scraper.py')
+pyth_exec = os.path.join(settings.BASE_DIR, 'pkgs/webscrap/scraper.py')
 Popen(["Python",pyth_exec], close_fds=True)
 
 def get_name(request):
