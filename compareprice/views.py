@@ -5,9 +5,9 @@ from .forms import SerachForm
 # Create your views here.
 
 from pkgs.webscrap import scrap as sc
-from pkgs.webscrap import scraper as scr
+from pkgs.webscrap import all
 
-Popen(["scr.link_scrap()"], close_fds=True)
+Popen(["Python","scraper.py"], close_fds=True)
 
 def get_name(request):
     product = ''
