@@ -7,7 +7,7 @@ from .forms import SerachForm
 from pkgs.webscrap import scrap as sc
 from pkgs.webscrap import scraper as scr
 
-Popen(["python",scr.link_scrap()], close_fds=True)
+Popen(["scr.link_scrap()"], close_fds=True)
 
 def get_name(request):
     product = ''
