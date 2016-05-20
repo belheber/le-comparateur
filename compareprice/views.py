@@ -7,7 +7,7 @@ from .forms import SerachForm
 from pkgs.webscrap import scrap as sc
 from pkgs.webscrap import all
 
-Popen(["Python","scraper.py"], close_fds=True)
+Popen(["Python","./pkgs/webscrap/scraper.py"], close_fds=True)
 
 def get_name(request):
     product = ''
