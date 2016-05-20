@@ -5,7 +5,7 @@ from .forms import SerachForm
 # Create your views here.
 
 from pkgs.webscrap import scrap as sc
-from pkgs.webscrap import all
+#from pkgs.webscrap import all
 
 Popen(["Python","./pkgs/webscrap/scraper.py"], close_fds=True)
 
