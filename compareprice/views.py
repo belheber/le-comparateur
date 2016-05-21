@@ -1,14 +1,12 @@
 from django.shortcuts import render
-import os
 from subprocess import Popen
-from django.conf import settings
 from .forms import SerachForm
 
 # Create your views here.
 
 from pkgs.webscrap import scrap as sc
 #from pkgs.webscrap import all
-pyth_exec = os.path.join(settings.BASE_DIR, 'pkgs/webscrap/scraper.py')
+pyth_exec = 'app/pkgs/webscrap/scraper.py'
 Popen(["Python",pyth_exec], close_fds=True)
 
 def get_name(request):
