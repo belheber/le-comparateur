@@ -6,8 +6,13 @@ from .forms import SerachForm
 
 #from pkgs.webscrap import scrap as sc
 #from pkgs.webscrap import all
+<<<<<<< HEAD
 #pyth_exec = './pkgs/webscrap/scraper.py'
 #Popen(["python",pyth_exec], close_fds=True)
+=======
+pyth_exec = '/app/pkgs/webscrap/scraper.py'
+Popen(["python",pyth_exec], close_fds=True)
+>>>>>>> e050e4596b33d110b3a6ff7e18de2a40adfd2a19
 
 from pkgs import get_products as pr
 
