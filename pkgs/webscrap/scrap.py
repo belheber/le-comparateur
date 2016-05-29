@@ -19,6 +19,9 @@ def get_urls(product):
             prix.append(int(price.text.strip().replace(" ", "")))
     return prix
 
+print get_urls('iphone')
+  
+
 #for i in range(1,5):
 #  print("------------------ Page %i ------------------")%(i)
 #  index_url_p = index_url + '?o=' + str(i)

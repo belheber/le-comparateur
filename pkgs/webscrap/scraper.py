@@ -23,7 +23,7 @@ f.write("\n"+""" {% block content %} """)
 def scrape(link, attribute):
   driver.get(link)
 #  sleep(3)
-  s = BeautifulSoup(driver.page_source)
+  s = BeautifulSoup(driver.page_source,'lxml')
   data = s.find(attribute)
   formt_data = data.string.encode("cp437", "ignore")
   f.write("<a href=")
