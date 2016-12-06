@@ -13,7 +13,7 @@ def get_urls(product):
   product_list = []
   response = requests.get(url)
   soup = bs4.BeautifulSoup(response.text, "lxml")
-  pr_items = soup.find_all("div",{"class":"item li-hover"})
+  pr_items = soup.find_all("div",{"class":"item li-hover "})
   for pro in pr_items:
     price = pro.find("div", {"class": "item-price"}).find('span',{"class":"price_value"})      
     if None == price or '' == price.text.strip():
