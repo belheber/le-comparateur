@@ -18,7 +18,7 @@ def index(request):
             # ...
             # redirect to a new URL:
             product = form.cleaned_data['search']
-            pro =  pr.get_urls(product)[:6]
+            pro =  pr.get_urls(product)[:20]
             context_dict = {'products':pro,'form':form}
             return render(request, 'bs.html', context_dict)
   else:
